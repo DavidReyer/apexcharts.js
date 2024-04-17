@@ -268,6 +268,7 @@ export default class ApexCharts {
       me.annotations.drawTextAnnos()
 
       if (w.config.annotations.position === 'back') {
+        w.globals.dom.Paper.add(w.globals.dom.elAnnotations)
         me.annotations.drawAxesAnnotations()
       }
 
@@ -323,6 +324,7 @@ export default class ApexCharts {
       }
 
       if (w.config.annotations.position === 'front') {
+        w.globals.dom.Paper.add(w.globals.dom.elAnnotations)
         me.annotations.drawAxesAnnotations()
       }
 
