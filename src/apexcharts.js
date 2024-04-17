@@ -267,7 +267,7 @@ export default class ApexCharts {
       me.annotations.drawImageAnnos()
       me.annotations.drawTextAnnos()
 
-      if (w.config.annotations.position === 'front') {
+      if (w.config.annotations.position === 'back') {
         me.annotations.drawAxesAnnotations()
       }
 
@@ -322,7 +322,7 @@ export default class ApexCharts {
         })
       }
 
-      if (w.config.annotations.position === 'back') {
+      if (w.config.annotations.position === 'front') {
         me.annotations.drawAxesAnnotations()
       }
 
